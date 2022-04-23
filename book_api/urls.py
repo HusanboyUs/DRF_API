@@ -4,7 +4,10 @@ from . import views
 app_name='book_api'
 
 urlpatterns = [
-    path('list/', views.books_list, name='books-list' ),
-    path('', views.book_create, name='book-create' ),
-    path('books/<int:pk>/', views.book, name='book' ),
+    path('list/', views.BookList.as_view(), name='books-list' ),
+    path('', views.BookCreate.as_view(), name='book-create'),
+    path('book/<int:pk>/', views.BookDetial.as_view(), name='book-detail'),
+
 ]
+
+
