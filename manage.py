@@ -3,7 +3,7 @@
 import os
 import sys
 
-#app st
+#app start
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'books.settings')
